@@ -1,0 +1,6 @@
+C:\Projects\SearchUserFromGitHub\SearchUserFromGitHub.Entities\bin\Debug\SearchUserFromGitHub.Entities.dll
+C:\Projects\SearchUserFromGitHub\SearchUserFromGitHub.Entities\bin\Debug\SearchUserFromGitHub.Entities.pdb
+C:\Projects\SearchUserFromGitHub\SearchUserFromGitHub.Entities\bin\Debug\Octokit.dll
+C:\Projects\SearchUserFromGitHub\SearchUserFromGitHub.Entities\obj\Debug\SearchUserFromGitHub.Entities.dll
+C:\Projects\SearchUserFromGitHub\SearchUserFromGitHub.Entities\obj\Debug\SearchUserFromGitHub.Entities.pdb
+C:\Projects\SearchUserFromGitHub\SearchUserFromGitHub.Entities\obj\Debug\SearchUserFromGitHub.Entities.csprojResolveAssemblyReference.cache

@@ -1,0 +1,59 @@
+﻿@{
+    ViewBag.Title = "SearchUserFromGitHub";
+}
+
+@section scripts{
+    @Scripts.Render("~/bundles/angular")
+    @Scripts.Render("~/bundles/grid") 
+}
+
+<div class="container ">
+    <div class="text-center caption">GIT HUB FIND REPOSITORY BY USER NAME</div>
+    <div ng-controller="gridController">
+        <div data-ng-show="loading" style="float: right">
+            <img src="~/Content/img/ring.gif" alt="..." />
+        </div>
+        <hr />
+        <div data-ng-hide="data.length > 0 ? true : false">
+            <h4><strong>no match found</strong></h4>
+        </div>
+        <div data-ng-hide="data.length > 0 && !loading ? false : true">
+            <div style="float: left">
+                <table class="tableData" border="0" cellpadding="0" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th style="width: 3px;">No.</th>
+                            <th style="width: 500px;">REPOSITORY DETAILS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="e in data" ng-class-odd="'odd'" ng-class-even="'even'">       
+                            <td>
+                                <p>{{e.count}}</p>
+                            </td>
+                            <td>
+                                <p><span class="name_project">{{e.name}}</span> <span class="additional_information">Language: <b>{{e.language}}</b> / Stargazer count: <b>{{e.highestStargazerCount}}</b></span></p>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr style="height: 60px">
+                            <td colspan="5">
+                                TOTAL RESULTS: {{totalCount}}
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="user">
+                <div><img ng-src="{{avatar}}" alt="None" class="avatar" /></div>
+                <div><b>Name:</b> <i>{{name}}</i></div>
+                <div><b>Location:</b> <i>{{location}}</i></div>
+            </div>
+        </div>
+        <div>
+            <input type="text" placeholder="type name" id="search_user" ng-keyup="$event.keyCode == 13 ? searchAnotherUser() : null" />
+            <input type="button" value="Search" ng-click="searchAnotherUser()" ng-disabled="loading"/>
+        </div>
+    </div>
+</div>

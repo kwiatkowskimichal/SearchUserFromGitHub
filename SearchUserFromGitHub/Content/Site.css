@@ -1,0 +1,86 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.caption {
+    letter-spacing: 2px;
+    font-weight: bold
+}
+
+.tableData {
+    border-left: solid 1px #D8C3C3;
+    border-top: solid 1px #D8C3C3;
+}
+
+.doted p {
+    max-width: 650px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.tableData td, .tableData th {
+    border-right: solid 1px #D8C3C3;
+    border-bottom: solid 1px #D8C3C3;
+    text-align: left;
+    padding: 5px;
+}
+
+.tableData th {
+    background-color: #FAFAFA;
+    padding: 7px 5px;
+    border-bottom-color: #9C9C9C;
+}
+
+.odd {
+    background-color: #f3f3f3;
+}
+
+.even {
+    background-color: #ffffff;
+}
+
+.additional_information {
+    color: dimgrey;
+    font-size: 12px;
+}
+
+.name_project {
+    color: cadetblue;
+    font-size: 18px;
+}
+
+.user {
+    float: left;
+    margin-left: 140px;
+}
+
+.avatar {
+    height: auto;
+    width: auto;
+    max-width: 350px;
+    max-height: 350px;
+    min-width: 350px;
+    min-height: 350px;
+}
